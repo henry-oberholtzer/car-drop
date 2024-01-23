@@ -58,7 +58,7 @@ namespace CarDrop.Tests
     {
       Vehicle alfaromeo = new("Spyder", 168, 64, 50, 2464);
       double density = ((double) 2464 / 311);
-      double expected = ((double) 311 * 10.99) * ((double) 100 - density)/100;
+      int expected = Convert.ToInt32(((double) 311 * 10.99) * ((double) 100 - density)/100);
       Assert.AreEqual(alfaromeo.CalcShippingCost(), expected);
     }
     

@@ -1,0 +1,193 @@
+@font-face {
+  font-family: "NASALIZA";
+  src: url("../fonts/NASALIZA.TTF")
+}
+
+h1 {
+  font-family: "NASALIZA", Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+* a {
+  text-decoration: none;
+  color: black;
+}
+
+header#header {
+  height: 120px;
+  padding: 10px;
+  top: 0px;
+  width: 100%;
+  background-color: #FFFFFF;
+  position: sticky;
+  display: flex;
+  text-decoration: none;
+  color: black;
+  flex-direction: row;
+  align-items: center;
+  border: 0 0 1px 0 solid black;
+  box-shadow: 0px 5px 3px 0px #AAA7A5;
+}
+
+header#header img {
+  height: 100px;
+}
+nav {
+  flex-grow: 3;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.nav-button {
+  border: 1px solid black;
+  color: black;
+  text-decoration: none;
+  background-color: #00ff19;
+  padding: 5px 6px;
+  border-radius: 3px;
+  font-family: "NASALIZA";
+}
+
+.white-button {
+  background-color: #FFFFFF;
+}
+
+.nav-button:hover {
+  background-color: #00ff1a6e;
+}
+
+footer#footer {
+  width: 100%;
+  height: 50px;
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0px -5px 3px 0px #AAA7A5;
+  position: fixed;
+  bottom: 0;
+  color: #999999;
+  background-color: white;
+}
+
+#disclaimer {
+  font-size: 8pt;
+}
+
+form {
+  width: fit-content;
+  margin-left: 30px;
+  margin-top: 30px;
+  background-color: #00FF19;
+  padding: 10px;
+  border: 2px solid black;
+  border-radius: 20px;
+}
+
+input {
+  margin-top: 5px;
+  margin-left: 5px;
+  width: 100px;
+}
+
+#name {
+  width: 300px;
+}
+
+#firstInput {
+  text-align: center;
+}
+
+#last4Questions {
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#last4Questions input {
+  margin-left: 20px;
+}
+
+#bio {
+  width: 50vw;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #00FF19;
+}
+
+#whoWeAre {
+  font-family: "NASALIZA";
+  font-style: italic;
+  text-decoration: underline;
+  width: 50vw;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  background-color: #00FF19;
+}
+
+#homeBackground {
+  height: 100vh;
+  width: 100vw;
+  background-image: url('../img/car_drop_background.jpg');
+  background-size: cover;
+  position: fixed;
+  z-index: -1;
+}
+
+#homeText {
+  margin-left: auto;
+  margin-right: auto;
+  width: fit-content;
+  background-color: #00FF19;
+}
+
+#about {
+  background-color: #00FF19;
+  width: fit-content;
+  margin-left: 30px;
+  padding: 10px;
+  margin-top: 30px;
+  border: 2px solid black;
+  border-radius: 20px;
+  margin-bottom: 70px;
+}
+
+#viewVehicles {
+  background-color: #00FF19;
+  width: fit-content;
+  margin-left: 30px;
+  padding: 20px;
+  margin-top: 30px;
+  border: 2px solid black;
+  border-radius: 20px;
+  margin-bottom: 70px;
+
+}
+
+#formTitle {
+  font-family: "NASALIZA";
+  margin-left: 10px;
+}
+
+#formButton {
+  width: 80px;
+  margin-left: 220px;
+}
+
+.spin-car {
+  position: fixed;
+  right: 10px;
+  top: 40%;
+}
+
+.retro {
+  background-image: url('../img/retro.jpeg');
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  background-size: contain;
+  z-index: -1;
+}

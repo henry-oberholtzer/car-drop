@@ -26,7 +26,7 @@ namespace CarDrop.Models
     public double CalcShippingCost()
     {
       double density = (double) Weight / GetVolume();
-      return ((double) GetVolume() * 10.99)  * ((double) 100 - density)/100;
+      return (double) (Convert.ToInt32(((double) GetVolume() * 10.99)  * ((double) 100 - density)/100)*100) / 100;
     }
 
     public static List<Vehicle> GetAll()
