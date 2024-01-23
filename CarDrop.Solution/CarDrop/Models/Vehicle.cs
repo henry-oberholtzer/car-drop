@@ -7,6 +7,8 @@ namespace CarDrop.Models
     public int Width { get; set; }
     public int Height { get; set; }
     public int Weight { get; set; }
+    private static List<Vehicle> _instances = new() { };
+
     public Vehicle(string name, int length, int width, int height, int weight)
     {
       Name = name;
@@ -14,16 +16,27 @@ namespace CarDrop.Models
       Width = width;
       Height = height;
       Weight = weight;
+      _instances.Add(this);
     }
     public int GetVolume()
     {
-      return Length * Width * Height;
+      return (Length * Width * Height) / (12 * 12 * 12);
     }
 
     public double CalcShippingCost()
     {
       double density = (double) Weight / GetVolume();
       return ((double) GetVolume() * 10.99)  * ((double) 100 - density)/100;
+    }
+
+    public static List<Vehicle> GetAll()
+    {
+      return _instances;
+    }
+
+    public static void ClearAll()
+    {
+      _instances.Clear();
     }
 
   }

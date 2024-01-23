@@ -1,5 +1,5 @@
 using Microsoft.AspNetCore.Mvc;
-using ToDoList.Models;
+using CarDrop.Models;
 using System.Collections.Generic;
 
 namespace CarDrop.Controllers
@@ -16,15 +16,15 @@ namespace CarDrop.Controllers
     }
 
     [HttpGet("/vehicles/new")]
-    public ActionResult AddVehicleForm()
+    public ActionResult New()
     {
       return View();
     }
 
     [HttpPost("/vehicles")]
-    public ActionResult Create(string name)
+    public ActionResult Create(string name, int length, int width, int height, int weight)
     {
-      Vehicle myVehicle = new Vehicle(name);
+      Vehicle myVehicle = new Vehicle(name, length, width, height, weight);
       return RedirectToAction("Index");
     }
 

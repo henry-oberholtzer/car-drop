@@ -48,11 +48,19 @@ namespace CarDrop.Tests
       Assert.AreEqual(alfaromeo.Weight, weight);
     }
     [TestMethod]
-    public void VehicleConstructor_GetVolume()
+    public void VehicleConstructor_GetVolume_Int()
     {
       Vehicle alfaromeo = new("Spyder", 168, 64, 50, 2464);
-      int expected = 537600;
+      int expected = 311;
       Assert.AreEqual(alfaromeo.GetVolume(), expected);
     }
+    public void VehicleConstructor_CalcShippingCost_Double()
+    {
+      Vehicle alfaromeo = new("Spyder", 168, 64, 50, 2464);
+      double density = ((double) 2464 / 311);
+      double expected = ((double) 311 * 10.99) * ((double) 100 - density)/100;
+      Assert.AreEqual(alfaromeo.CalcShippingCost(), expected);
+    }
+    
   }
 }
