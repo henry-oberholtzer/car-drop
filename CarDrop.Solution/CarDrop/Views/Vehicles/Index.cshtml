@@ -19,9 +19,9 @@
   <ul>
     @foreach (Vehicle vehicle in Model)
     {
-      @* <li>@vehicle.name</li>
-    <li>@vehicle.volume()</li>
-    <li>@vehicle.shippingCost()</li> *@
+    <li>@vehicle.Name</li>
+    <li>@vehicle.GetVolume()</li>
+    <li>@vehicle.CalcShippingCost()</li>
     }
   </ul>
   <a href="/vehicles/new">Add a new vehicle.</a>

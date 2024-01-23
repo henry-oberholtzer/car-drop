@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.002.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "CarDrop.Solution", "CarDrop.Solution", "{9407CE58-FC37-49CC-A2D9-8197EE4CE0DF}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CarDrop.Tests", "CarDrop.Solution\CarDrop.Tests\CarDrop.Tests.csproj", "{74CFD4CD-0776-4526-8FFA-66FFA3595644}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CarDrop", "CarDrop.Solution\CarDrop\CarDrop.csproj", "{1F97094C-7EDF-4E35-A1B3-141E3AC50563}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{74CFD4CD-0776-4526-8FFA-66FFA3595644}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{74CFD4CD-0776-4526-8FFA-66FFA3595644}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{74CFD4CD-0776-4526-8FFA-66FFA3595644}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{74CFD4CD-0776-4526-8FFA-66FFA3595644}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1F97094C-7EDF-4E35-A1B3-141E3AC50563}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1F97094C-7EDF-4E35-A1B3-141E3AC50563}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1F97094C-7EDF-4E35-A1B3-141E3AC50563}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1F97094C-7EDF-4E35-A1B3-141E3AC50563}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{74CFD4CD-0776-4526-8FFA-66FFA3595644} = {9407CE58-FC37-49CC-A2D9-8197EE4CE0DF}
+		{1F97094C-7EDF-4E35-A1B3-141E3AC50563} = {9407CE58-FC37-49CC-A2D9-8197EE4CE0DF}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {911469EC-B52B-40E1-907C-3A9FCEF59497}
+	EndGlobalSection
+EndGlobal
